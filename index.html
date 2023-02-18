@@ -47,12 +47,28 @@
                     <i class="fa-solid fa-xmark"></i> h
                   </p>
                   <div class="text-center d-flex justify-contens-between">
-                    <input type="text" class="w-50" placeholder="b" /> cm
-                    <input type="text" class="w-50" placeholder="h" /> cm
+                    <input
+                      id="input-b-triangle"
+                      type="text"
+                      class="w-50"
+                      placeholder="b"
+                    />
+                    cm
+                    <input
+                      id="input-h-triangle"
+                      type="text"
+                      class="w-50"
+                      placeholder="h"
+                    />
+                    cm
                   </div>
                 </div>
                 <div>
-                  <button class="btn btn-outline-primary w-100" type="submit">
+                  <button
+                    id="btn-triangle"
+                    class="btn btn-outline-primary w-100"
+                    type="submit"
+                  >
                     Calculate
                   </button>
                 </div>
@@ -170,9 +186,32 @@
             <div class="card border-dark mb-3" style="max-width: 18rem">
               <div class="card-header text-center">Area Calculation</div>
               <div class="card-body text-dark">
-                <ol>
-                  <li></li>
-                </ol>
+                <table>
+                  <tr>
+                    <td>Triangle  </td>
+                    <td id="result-of-triangle"></td>
+                    <td class="me-4">
+                      <button
+                        class="btn btn-outline-primary w-100"
+                        type="submit"
+                      >
+                        Convert to m <sup>2</sup>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Triangle  </td>
+                    <td id="result-of-triangle"></td>
+                    <td class="me-4">
+                      <button
+                        class="btn btn-outline-primary w-100"
+                        type="submit"
+                      >
+                        Convert to m <sup>2</sup>
+                      </button>
+                    </td>
+                  </tr>
+                </table>
               </div>
             </div>
           </div>
