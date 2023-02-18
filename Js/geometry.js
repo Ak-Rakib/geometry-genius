@@ -25,3 +25,29 @@ document.getElementById('btn-rectangle').addEventListener('click', function(){
     const showResultRectangle = document.getElementById('result-of-rectangle');
     showResultRectangle.innerText = calculatorRectangle;
 });
+
+
+
+
+document.getElementById('btn-parallelogram').addEventListener('click', function(){
+    const b = 10;
+    const h = 12;
+    
+    const calculatorParallelogram = b * h;
+
+    const showResultParallelogram = document.getElementById('result-of-parallelogram');
+    showResultParallelogram.innerText = calculatorParallelogram;
+
+});
+
+
+
+document.getElementById('btn-Rhombus').addEventListener('click', function(){
+    const d1 = 16;
+    const d2 = 8;
+
+    const calculatorRhombus = 0.5 * 16 * 8;
+
+    const showResultRhombus = document.getElementById('result-of-Rhombus');
+    showResultRhombus.innerText = calculatorRhombus;
+});

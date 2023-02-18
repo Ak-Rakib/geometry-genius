@@ -23,7 +23,7 @@
             <h6>Geometry Genius</h6></a
           >
           <div>
-            <button class="btn btn-outline-primary" type="submit">Blog</button>
+            <button onclick="window.location.href='blog.html';" class="btn btn-outline-primary" type="submit">Blog</button>
           </div>
         </div>
       </nav>
@@ -127,7 +127,7 @@
                   <p class="card-text text-center">b=10cm, h=12cm</p>
                 </div>
                 <div>
-                  <button class="btn btn-outline-primary w-100" type="submit">
+                  <button id="btn-parallelogram" class="btn btn-outline-primary w-100" type="submit">
                     Calculate
                   </button>
                 </div>
@@ -143,14 +143,14 @@
                   <h5 class="card-title text-center">Rhombus</h5>
                   <p class="card-text text-center">
                     Area(A)= 0.5 <i class="fa-solid fa-xmark"></i>d<sub>1</sub
-                    ><i class="fa-solid fa-xmark"></i>d<sub>1</sub>
+                    ><i class="fa-solid fa-xmark"></i>d<sub>2</sub>
                   </p>
                   <p class="card-text text-center">
                     d<sub>1</sub>=16cm, d<sub>2</sub>=8cm
                   </p>
                 </div>
                 <div>
-                  <button class="btn btn-outline-primary w-100" type="submit">
+                  <button id="btn-Rhombus" class="btn btn-outline-primary w-100" type="submit">
                     Calculate
                   </button>
                 </div>
@@ -229,7 +229,19 @@
                   </tr>
                   <tr>
                     <td>Parallelogram</td>
-                    <td id="result-of-rectangle"></td>
+                    <td id="result-of-parallelogram"></td>
+                    <td class="me-4">
+                      <button
+                        class="btn btn-outline-primary w-100"
+                        type="submit"
+                      >
+                        Convert to m<sup>2</sup>
+                      </button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Parallelogram</td>
+                    <td id="result-of-Rhombus"></td>
                     <td class="me-4">
                       <button
                         class="btn btn-outline-primary w-100"
