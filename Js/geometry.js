@@ -61,6 +61,7 @@ function dataOfTriangle(serial, calculatorTriangle){
 }
 
 
+// get result Rectangle
 document.getElementById('btn-rectangle').addEventListener('click', function () {
     serial +=1;
     const inputRectangleW = document.getElementById('input-field-rectangle-w');
@@ -87,25 +88,100 @@ function dataOfRectangle(serial, calculatorRectangle){
 }
 
 
+
+// get result Parallelogram
 document.getElementById('btn-parallelogram').addEventListener('click', function () {
+    serial +=1;
     const b = 10;
     const h = 12;
 
     const calculatorParallelogram = b * h;
-
-    const showResultParallelogram = document.getElementById('result-of-parallelogram');
-    showResultParallelogram.innerText = calculatorParallelogram;
-
+    dataOfParallelogram(serial, calculatorParallelogram);
 });
 
+function dataOfParallelogram(serial, calculatorParallelogram){
+    const tableContainer = document.getElementById('calculation-area');
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+        <td>${serial}.</td>
+        <td>Parallelogram</td>
+        <td>${calculatorParallelogram}cm<sup>2</sup></td>
+        <td><button class='btn btn-outline-success'>Convert to m<sup>2</sup></button></td>
+    `;
+    tableContainer.appendChild(tr);
+}
 
 
+
+// Get result of Rhombus
 document.getElementById('btn-Rhombus').addEventListener('click', function () {
+    serial +=1;
     const d1 = 16;
     const d2 = 8;
 
-    const calculatorRhombus = 0.5 * 16 * 8;
+    const calculatorRhombus = 0.5 * d1 * d2;
+    dataOfRhombus(serial, calculatorRhombus)
 
-    const showResultRhombus = document.getElementById('result-of-Rhombus');
-    showResultRhombus.innerText = calculatorRhombus;
 });
+
+function dataOfRhombus(serial, calculatorRhombus){
+    const tableContainer = document.getElementById('calculation-area');
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+        <td>${serial}.</td>
+        <td>Rhombus</td>
+        <td>${calculatorRhombus}cm<sup>2</sup></td>
+        <td><button class='btn btn-outline-success'>Convert to m<sup>2</sup></button></td>
+    `;
+    tableContainer.appendChild(tr); 
+}
+
+
+
+// Get result of Pentagon
+document.getElementById('btn-pentagon').addEventListener('click', function () {
+    serial +=1;
+    const p = 6;
+    const b = 10;
+
+    const calculatorPentagon = 0.5 * p * b;
+    dataOfPentagon(serial, calculatorPentagon);
+
+});
+
+function dataOfPentagon(serial, calculatorPentagon){
+    const tableContainer = document.getElementById('calculation-area');
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+        <td>${serial}.</td>
+        <td>Pentagon</td>
+        <td>${calculatorPentagon}cm<sup>2</sup></td>
+        <td><button class='btn btn-outline-success'>Convert to m<sup>2</sup></button></td>
+    `;
+    tableContainer.appendChild(tr); 
+}
+
+
+
+// Get result of Ellipse
+document.getElementById('btn-ellipse').addEventListener('click', function () {
+    serial +=1;
+    const b = 10;
+    const h = 12;
+
+    const calculatorEllipse = b * h;
+    dataOfEllipse(serial, calculatorEllipse);
+
+});
+
+function dataOfEllipse(serial, calculatorEllipse){
+    const tableContainer = document.getElementById('calculation-area');
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+        <td>${serial}.</td>
+        <td>Ellipse</td>
+        <td>${calculatorEllipse}cm<sup>2</sup></td>
+        <td><button class='btn btn-outline-success'>Convert to m<sup>2</sup></button></td>
+    `;
+    tableContainer.appendChild(tr); 
+}
