@@ -32,8 +32,11 @@ document.addEventListener('mouseover', function(){
 });
 
 
+let serial = 0;
 
+// Get result Triangle
 document.getElementById('btn-triangle').addEventListener('click', function () {
+    serial +=1;
     const inputTriangleB = document.getElementById('input-b-triangle');
     const getInputTriangleValueB = inputTriangleB.value;
 
@@ -41,23 +44,25 @@ document.getElementById('btn-triangle').addEventListener('click', function () {
     const inputTriangleH = document.getElementById('input-h-triangle');
     const getInputTriangleValueH = inputTriangleH.value;
 
-    const calculateTriangle = (0.5 * getInputTriangleValueB * getInputTriangleValueH).toFixed(2);
+    const calculatorTriangle = (0.5 * getInputTriangleValueB * getInputTriangleValueH).toFixed(2);
+    dataOfTriangle(serial, calculatorTriangle);
+});
 
-    const showResultTriangle = document.getElementById('result-of-triangle');
-    showResultTriangle.innerText = calculateTriangle;
-
+function dataOfTriangle(serial, calculatorTriangle){
     const tableContainer = document.getElementById('calculation-area');
     const tr = document.createElement('tr');
     tr.innerHTML = `
-        <td>${1}</td>
-        <td>${Triangle}</td>
-        <td>${calculateTriangle}</td>
-    `
-    tableContainer.appendChild('tr');
-});
+        <td>${serial}.</td>
+        <td>Triangle</td>
+        <td>${calculatorTriangle}cm<sup>2</sup></td>
+        <td><button class='btn btn-outline-success'>Convert to m<sup>2</sup></button></td>
+    `;
+    tableContainer.appendChild(tr);
+}
 
 
 document.getElementById('btn-rectangle').addEventListener('click', function () {
+    serial +=1;
     const inputRectangleW = document.getElementById('input-field-rectangle-w');
     const getInputRectangleValueW = inputRectangleW.value;
 
@@ -65,12 +70,21 @@ document.getElementById('btn-rectangle').addEventListener('click', function () {
     const getInputRectangleValueI = inputRectangleI.value;
 
     const calculatorRectangle = (getInputRectangleValueW * getInputRectangleValueI).toFixed(2);
-
-    const showResultRectangle = document.getElementById('result-of-rectangle');
-    showResultRectangle.innerText = calculatorRectangle;
+    dataOfRectangle(serial, calculatorRectangle)
+    
 });
 
-
+function dataOfRectangle(serial, calculatorRectangle){
+    const tableContainer = document.getElementById('calculation-area');
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+        <td>${serial}.</td>
+        <td>Rectangle</td>
+        <td>${calculatorRectangle}cm<sup>2</sup></td>
+        <td><button class='btn btn-outline-success'>Convert to m<sup>2</sup></button></td>
+    `;
+    tableContainer.appendChild(tr);
+}
 
 
 document.getElementById('btn-parallelogram').addEventListener('click', function () {
