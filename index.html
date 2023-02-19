@@ -23,182 +23,208 @@
             <h6>Geometry Genius</h6></a
           >
           <div>
-            <button onclick="window.location.href='blog.html';" class="btn btn-outline-primary" type="submit">Blog</button>
+            <button
+              onclick="window.location.href='blog.html';"
+              class="btn btn-outline-primary"
+              type="submit"
+            >
+              Blog
+            </button>
           </div>
         </div>
       </nav>
     </header>
     <main>
       <section class="mt-2 p-5">
-        <div class="row">
-          <div class="col-8">
-            <div class="card-group">
-              <!-- 1 -->
-              <div class="card m-2">
-                <img
-                  src="images/triangle.png"
-                  class="card-img-top w-75 mx-auto"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title text-center">Triangle</h5>
-                  <p class="card-text text-center">
-                    Area(A)= 0.5 <i class="fa-solid fa-xmark"></i> b
-                    <i class="fa-solid fa-xmark"></i> h
-                  </p>
-                  <div class="text-center d-flex justify-contens-between">
-                    <input
-                      id="input-b-triangle"
-                      type="text"
-                      class="w-50"
-                      placeholder="b"
-                    />
-                    cm
-                    <input
-                      id="input-h-triangle"
-                      type="text"
-                      class="w-50"
-                      placeholder="h"
-                    />
-                    cm
+        <div class="row gy-5">
+          <div class="col-12 col-md-8 col-lg-8">
+            <div class="row gy-5">
+              <div class="col-12 col-md-6 col-lg-4">
+                <!-- 1 -->
+                <div class="card">
+                  <img
+                    src="images/triangle.png"
+                    class="card-img-top w-75 mx-auto"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Triangle</h5>
+                    <p class="card-text text-center">
+                      Area(A)= 0.5 <i class="fa-solid fa-xmark"></i> b
+                      <i class="fa-solid fa-xmark"></i> h
+                    </p>
+                    <div class="text-center d-flex justify-contens-between">
+                      <input
+                        id="input-b-triangle"
+                        type="text"
+                        class="w-50"
+                        placeholder="b"
+                      />
+                      cm
+                      <input
+                        id="input-h-triangle"
+                        type="text"
+                        class="w-50"
+                        placeholder="h"
+                      />
+                      cm
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      id="btn-triangle"
+                      class="btn btn-outline-primary w-100"
+                      type="submit"
+                    >
+                      Calculate
+                    </button>
                   </div>
                 </div>
-                <div>
-                  <button
-                    id="btn-triangle"
-                    class="btn btn-outline-primary w-100"
-                    type="submit"
-                  >
-                    Calculate
-                  </button>
-                </div>
               </div>
-              <!-- 2 -->
-              <div class="card m-2">
-                <img
-                  src="images/rectangle.png"
-                  class="card-img-top w-75 mx-auto"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title text-center">Rectangle</h5>
-                  <p class="card-text text-center">
-                    Area(A)= w <i class="fa-solid fa-xmark"></i> I
-                  </p>
-                  <div class="text-center d-flex justify-contens-between">
-                    <input
-                      id="input-field-rectangle-w"
-                      type="text"
-                      class="w-50"
-                      placeholder="b"
-                    />
-                    cm
-                    <input
-                      id="input-field-rectangle-I"
-                      type="text"
-                      class="w-50"
-                      placeholder="h"
-                    />
-                    cm
+              <div class="col-12 col-md-6 col-lg-4">
+                <!-- 2 -->
+                <div class="card">
+                  <img
+                    src="images/rectangle.png"
+                    class="card-img-top w-75 mx-auto"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Rectangle</h5>
+                    <p class="card-text text-center">
+                      Area(A)= w <i class="fa-solid fa-xmark"></i> I
+                    </p>
+                    <div class="text-center d-flex justify-contens-between">
+                      <input
+                        id="input-field-rectangle-w"
+                        type="text"
+                        class="w-50"
+                        placeholder="b"
+                      />
+                      cm
+                      <input
+                        id="input-field-rectangle-I"
+                        type="text"
+                        class="w-50"
+                        placeholder="h"
+                      />
+                      cm
+                    </div>
+                  </div>
+                  <div>
+                    <button
+                      id="btn-rectangle"
+                      class="btn btn-outline-primary w-100"
+                      type="submit"
+                    >
+                      Calculate
+                    </button>
                   </div>
                 </div>
-                <div>
-                  <button
-                    id="btn-rectangle"
-                    class="btn btn-outline-primary w-100"
-                    type="submit"
-                  >
-                    Calculate
-                  </button>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <!-- 3 -->
+                <div class="card">
+                  <img
+                    src="images/parallelogram.png"
+                    class="card-img-top w-75 mx-auto"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Parallelogram</h5>
+                    <p class="card-text text-center">
+                      Area(A)= b <i class="fa-solid fa-xmark"></i> h
+                    </p>
+                    <p class="card-text text-center">b=10cm, h=12cm</p>
+                  </div>
+                  <div>
+                    <button
+                      id="btn-parallelogram"
+                      class="btn btn-outline-primary w-100"
+                      type="submit"
+                    >
+                      Calculate
+                    </button>
+                  </div>
                 </div>
               </div>
-              <!-- 3 -->
-              <div class="card m-2">
-                <img
-                  src="images/parallelogram.png"
-                  class="card-img-top w-75 mx-auto"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title text-center">Parallelogram</h5>
-                  <p class="card-text text-center">
-                    Area(A)= b <i class="fa-solid fa-xmark"></i> h
-                  </p>
-                  <p class="card-text text-center">b=10cm, h=12cm</p>
-                </div>
-                <div>
-                  <button id="btn-parallelogram" class="btn btn-outline-primary w-100" type="submit">
-                    Calculate
-                  </button>
-                </div>
-              </div>
-              <!-- 4 -->
-              <div class="card m-2">
-                <img
-                  src="images/rhombus.png"
-                  class="card-img-top w-75 mx-auto"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title text-center">Rhombus</h5>
-                  <p class="card-text text-center">
-                    Area(A)= 0.5 <i class="fa-solid fa-xmark"></i>d<sub>1</sub
-                    ><i class="fa-solid fa-xmark"></i>d<sub>2</sub>
-                  </p>
-                  <p class="card-text text-center">
-                    d<sub>1</sub>=16cm, d<sub>2</sub>=8cm
-                  </p>
-                </div>
-                <div>
-                  <button id="btn-Rhombus" class="btn btn-outline-primary w-100" type="submit">
-                    Calculate
-                  </button>
+              <div class="col-12 col-md-6 col-lg-4">
+                <!-- 4 -->
+                <div class="card">
+                  <img
+                    src="images/rhombus.png"
+                    class="card-img-top w-75 mx-auto"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Rhombus</h5>
+                    <p class="card-text text-center">
+                      Area(A)= 0.5 <i class="fa-solid fa-xmark"></i>d<sub>1</sub
+                      ><i class="fa-solid fa-xmark"></i>d<sub>2</sub>
+                    </p>
+                    <p class="card-text text-center">
+                      d<sub>1</sub>=16cm, d<sub>2</sub>=8cm
+                    </p>
+                  </div>
+                  <div>
+                    <button
+                      id="btn-Rhombus"
+                      class="btn btn-outline-primary w-100"
+                      type="submit"
+                    >
+                      Calculate
+                    </button>
+                  </div>
                 </div>
               </div>
-              <!-- 5 -->
-              <div class="card m-2">
-                <img
-                  src="images/pentagon.png"
-                  class="card-img-top w-75 mx-auto"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title text-center">Pentagon</h5>
-                  <p class="card-text text-center">
-                    Area(A)= 0.5 <i class="fa-solid fa-xmark"></i> p
-                    <i class="fa-solid fa-xmark"></i> b
-                  </p>
-                  <p class="card-text text-center">b=6cm, h=10cm</p>
-                </div>
-                <div>
-                  <button class="btn btn-outline-primary w-100" type="submit">
-                    Calculate
-                  </button>
+              <div class="col-12 col-md-6 col-lg-4">
+                <!-- 5 -->
+                <div class="card">
+                  <img
+                    src="images/pentagon.png"
+                    class="card-img-top w-75 mx-auto"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Pentagon</h5>
+                    <p class="card-text text-center">
+                      Area(A)= 0.5 <i class="fa-solid fa-xmark"></i> p
+                      <i class="fa-solid fa-xmark"></i> b
+                    </p>
+                    <p class="card-text text-center">b=6cm, h=10cm</p>
+                  </div>
+                  <div>
+                    <button class="btn btn-outline-primary w-100" type="submit">
+                      Calculate
+                    </button>
+                  </div>
                 </div>
               </div>
-              <!-- 6 -->
-              <div class="card m-2">
-                <img
-                  src="images/ellipse.png"
-                  class="card-img-top w-75 mx-auto"
-                  alt="..."
-                />
-                <div class="card-body">
-                  <h5 class="card-title text-center">Ellipse</h5>
-                  <p class="card-text text-center">
-                    Area(A)= b <i class="fa-solid fa-xmark"></i> h
-                  </p>
-                  <p class="card-text text-center">b=10cm, h=12cm</p>
-                </div>
-                <div>
-                  <button class="btn btn-outline-primary w-100" type="submit">
-                    Calculate
-                  </button>
+              <div class="col-12 col-md-6 col-lg-4">
+                <!-- 6 -->
+                <div class="card">
+                  <img
+                    src="images/ellipse.png"
+                    class="card-img-top w-75 mx-auto"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Ellipse</h5>
+                    <p class="card-text text-center">
+                      Area(A)= b <i class="fa-solid fa-xmark"></i> h
+                    </p>
+                    <p class="card-text text-center">b=10cm, h=12cm</p>
+                  </div>
+                  <div>
+                    <button class="btn btn-outline-primary w-100" type="submit">
+                      Calculate
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-md-4 col-lg-4">
             <div class="card border-dark mb-3" style="max-width: 18rem">
               <div class="card-header text-center">Area Calculation</div>
               <div class="card-body text-dark">
